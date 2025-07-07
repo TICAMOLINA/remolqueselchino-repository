@@ -1,0 +1,7 @@
+const menuItems = [
+    { id: 1, nombre: 'Inicio', ruta: '/'},
+    { id: 2, nombre: 'Nosotros', ruta: '/nosotros'},
+    { id: 3, nombre: 'Contacto', ruta: '/contacto'},
+]
+
+export default menuItems
