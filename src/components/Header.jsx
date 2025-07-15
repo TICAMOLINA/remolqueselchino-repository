@@ -1,4 +1,6 @@
 import Navbar from "./Navbar"
+import '../scss/components/Header.scss'
+import Searchbar from "./Searchbar"
 
 const Header = () => {
   return (
@@ -6,6 +8,8 @@ const Header = () => {
             <input type="checkbox" id="menu" />
 
             <Navbar />
+
+            <Searchbar />
 
         </header>
   )

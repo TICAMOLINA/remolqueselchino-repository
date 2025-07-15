@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router"
 import Header from "./components/Header"
 import Routes from "./routes/Routes"
 import Footer from "./components/Footer"
+import WhatsappFloat from "./components/WhatsappFloat"
 
 const App = () => {
   return (
@@ -11,9 +12,13 @@ const App = () => {
 
       <Routes />
 
-      <Footer />    
-    
+      <WhatsappFloat />
+
+      <Footer />
+
     </BrowserRouter>
+
+
   )
 }
 

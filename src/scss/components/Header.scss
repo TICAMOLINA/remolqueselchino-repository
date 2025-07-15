@@ -1,0 +1,128 @@
+.main-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    @media screen and (min-width: 992px) {
+        & {}
+    }
+}
+
+#menu {
+    display: none;
+
+    &:checked+.nav-bar {
+
+        display: block;
+        transform: translateX(0);
+    }
+
+    &:checked~.search-bar .menu-toogle .menu-toogle__label {
+        background-color: grey;
+    }
+
+    &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__top-bread {
+        background-color: rgb(212, 207, 207);
+    }
+
+    &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__meat {
+        background-color: rgb(212, 207, 207);
+    }
+
+    &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__bottom-bread {
+        background-color: rgb(212, 207, 207);
+    }
+
+}
+
+/* -----------------------------------------*/
+/* MENÚ TOOGLE
+/*------------------------------------------*/
+
+.menu-toogle {
+    display: block;
+    /* background-color: red; */
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+    order: 0;
+    margin-right: 20px;
+
+    &__label {
+        display: block;
+        /* background-color: black; */
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #fe3500;
+        height: .09rem;
+        position: absolute;
+        left: .7rem;
+        right: .3rem;
+    }
+
+    &__top-bread {
+        top: 2rem;
+    }
+
+    &__meat {
+        /* Centrar sin usar flexbox */
+        top: 50%;
+        /* centrando verticalmente */
+        margin-top: -.5rem;
+    }
+
+    &__bottom-bread {
+        bottom: 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+
+}
+
+.nav-bar {
+    display: none;
+    text-align: center;
+    width: 100%;
+    order: 2;
+    padding: 20px;
+    background-color: rgb(33, 33, 33);
+
+    &__nav-list {
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        padding: 10px;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+            color: white;
+            opacity: 0;
+            animation: revealFromCenter 0.3s ease-out forwards;
+            animation-delay: var(--delay);
+            animation-fill-mode: both;
+        }
+    }
+}
+
+@keyframes revealFromCenter {
+    0% {
+        opacity: 0;
+        clip-path: inset(50% 0 50% 0);
+        /* recorta desde el centro */
+    }
+
+    100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+        /* muestra todo */
+    }
+}

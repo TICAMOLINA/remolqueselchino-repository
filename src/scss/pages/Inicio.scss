@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&');
+
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__first-container {
+        margin-top: 35px;
+        width: 18rem;
+        text-align: center;
+        text-shadow: 1.1px 1.1px 0.5px #fe3500;
+    }
+
+    &__tittle {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 2.5em;
+        font-weight: 550;
+        color: whitesmoke;
+
+    }
+
+    &__first-text {
+        font-size: 4em;
+        color: white;
+    }
+
+    &__description-container {
+        width: 98%;
+        background-color: rgba(195, 188, 188, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: 22px;
+        margin-top: 15px;
+    }
+
+    &__second-text {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding: 50px;
+        font-size: 1.4em;
+    }
+
+    &__slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+.slider {
+    background-image: url(imgs/foto-01.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-width: 400px;
+    border-radius: 12px;
+    transform: translate(-0%, -0%);
+    animation: efecto linear infinite 15s;
+}
+
+@keyframes efecto {
+    40% {
+        background-image: url(imgs/foto-02.jpeg);
+    }
+
+    80% {
+        background-image: url(imgs/foto-03.jpeg);
+    }
+}

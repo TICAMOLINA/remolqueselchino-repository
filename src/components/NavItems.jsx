@@ -1,10 +1,13 @@
 import { NavLink } from "react-router"
+import '../scss/components/Header.scss'
 
 const NavItems = ( { item } ) => {
   return (
         <li className="nav-bar__nav-item">
             <NavLink to={item.ruta}
-            className="nav-bar__nav-link">
+            className="nav-bar__nav-link"
+                      key={item.id}
+          style={{ "--delay": `${item.id * 0.2}s` }}>
                 {item.nombre}
             </NavLink>
         </li>

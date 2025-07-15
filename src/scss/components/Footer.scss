@@ -1,0 +1,30 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 2rem;
+    height: 18rem;
+    margin-top: 4rem;
+
+
+    &__footer-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        width: 6rem;
+        gap: 1rem;
+        font-size: 2em;
+
+        a {
+            color: whitesmoke;
+        }
+    }
+
+    &__footer-text {
+        color: whitesmoke;
+        text-align: center;
+    }
+}
