@@ -5,10 +5,10 @@ const Inicio = () => {
   return (
     <>
       <main className="home">
-        <section className="home__first-container">
+        <header className="home__first-container">
           <h1 className="home__tittle">Estés donde estés, SERVICIO DE REMOLQUE</h1>
           <p className="home__first-text">24 hs</p>
-        </section>
+        </header>
 
         <section className='home__slider-container'>
           <Slider />

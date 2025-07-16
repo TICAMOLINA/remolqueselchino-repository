@@ -1,7 +1,27 @@
+import '../scss/pages/Nosotros.scss'
+
 
 const Nosotros = () => {
   return (
-    <div>Nosotros</div>
+    <main className='about-page'>
+      <header className="about-page__video-container">
+        <video className="about-page__video-file" controls autoPlay muted loop>
+          <source src='video/video-01.mp4' type='video/mp4'/>
+        </video>
+      </header>
+
+      <section className="about-page__text-container">
+        <div>
+          <h1>Remolques<br />"El Chino"</h1>
+          <p>Ubicados en la ciudad de Tandil, te ofrecemos un servicio confiable de auxilio mecánico para autos y camionetas en cualquier lugar donde te encuentres. Estamos disponibles las 24 horas, listos para ayudarte cuando más lo necesites. Nos destacamos por la responsabilidad, el compromiso y el trato cordial con cada cliente.</p>
+        </div>
+      </section>
+
+      <section className="about-page__image-logo-container">
+        <img className='about-page__logo-image' src="imgs/logo-tarjeta.jpeg" alt="Logo de la empresa" />
+
+      </section>
+    </main>
   )
 }
 
