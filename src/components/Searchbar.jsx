@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router'
 import '../scss/components/Searchbar.scss'
+import closeToggleMenu from '../utils/closeToggleMenu.js'
 
 
 const Searchbar = () => {
@@ -14,7 +15,8 @@ const Searchbar = () => {
             </div>
 
             <div className="search-bar__logo-container">
-                <NavLink to="/">
+                <NavLink to="/"
+                onClick={closeToggleMenu}>
                 <img className="search-bar__logo-image" src="/imgs/logo-web.webp" alt="logo de la pagina" />
                 </NavLink>
             </div>

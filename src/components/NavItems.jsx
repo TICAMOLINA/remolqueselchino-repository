@@ -1,16 +1,19 @@
 import { NavLink } from "react-router"
 import '../scss/components/Header.scss'
+import closeToggleMenu from "../utils/closeToggleMenu.js"
 
-const NavItems = ( { item } ) => {
+const NavItems = ({ item }) => {
   return (
-        <li className="nav-bar__nav-item">
-            <NavLink to={item.ruta}
-            className="nav-bar__nav-link"
-                      key={item.id}
-          style={{ "--delay": `${item.id * 0.2}s` }}>
-                {item.nombre}
-            </NavLink>
-        </li>
+    <li className="nav-bar__nav-item">
+      <NavLink to={item.ruta}
+        className="nav-bar__nav-link"
+        key={item.id}
+        style={{ "--delay": `${item.id * 0.2}s` }}
+        onClick={ closeToggleMenu }>
+        {item.nombre}
+        
+      </NavLink>
+    </li>
   )
 }
 
