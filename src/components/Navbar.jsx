@@ -5,7 +5,6 @@ import '../scss/components/Header.scss'
 const Navbar = () => {
     return (
         <nav className="nav-bar">
-
             <div>
                 <ul className="nav-bar__nav-list">
                     {

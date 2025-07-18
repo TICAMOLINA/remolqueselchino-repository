@@ -1,33 +1,19 @@
-import { useRoutes } from "react-router"
+import { Route, Routes } from "react-router"
 import Inicio from "../pages/Inicio"
 import Contacto from "../pages/Contacto"
 import Nosotros from "../pages/Nosotros"
 import NoEncontrado from "../pages/NoEncontrado"
 
-const Routes = () => {
 
-    const hookRoutes = useRoutes(
-                [
-            {
-                path: '/',
-                element: <Inicio />
-            },
-            {
-                path: '/contacto',
-                element: <Contacto />
-            },
-            {
-                path: '/nosotros',
-                element: <Nosotros />
-            },
-            {
-                path: '*',
-                element: <NoEncontrado />
-            }
-        ]
+const RoutesComponent = ({ location }) => {
+    return (
+      <Routes location={location}>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/Nosotros" element={<Nosotros />} />
+        <Route path="*" element={<NoEncontrado />} />
+      </Routes> 
     )
-
-    return hookRoutes
 }
 
-export default Routes
+export default RoutesComponent
