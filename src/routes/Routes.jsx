@@ -14,6 +14,30 @@ const RoutesComponent = ({ location }) => {
         <Route path="*" element={<NoEncontrado />} />
       </Routes> 
     )
+
+/*     const hookRoutes = useRoutes(
+                [
+            {
+                path: '/',
+                element: <Inicio />
+            },
+            {
+                path: '/contacto',
+                element: <Contacto />
+            },
+            {
+                path: '/nosotros',
+                element: <Nosotros />
+            },
+            {
+                path: '*',
+                element: <NoEncontrado />
+            }
+        ]
+    )
+
+    return hookRoutes */
 }
+
 
 export default RoutesComponent
