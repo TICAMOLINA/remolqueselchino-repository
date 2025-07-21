@@ -8,7 +8,7 @@ const Searchbar = () => {
         <div className="search-bar">
 
             <div className="search-bar__emergency-button">
-                <Link to="">
+                <Link to="https://wa.me/2494341482">
                 <span>Tenes una urgencia?</span>
                 <span>Comunicate con nosotros</span>
                 </Link>

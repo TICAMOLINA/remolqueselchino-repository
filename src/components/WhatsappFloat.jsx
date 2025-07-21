@@ -4,7 +4,7 @@ import '../scss/components/WhatsappFloat.scss'
 const WhatsappFloat = () => {
   return (
     <Link className='wa-icon-link'
-      to="https://wa.me/2281313621" // Reemplazá con tu número
+      to="https://wa.me/2494341482" // Reemplazá con tu número
       target="_blank"
       rel="noopener noreferrer"
     >
