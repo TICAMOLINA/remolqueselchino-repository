@@ -9,9 +9,9 @@ const NavItems = ({ item }) => {
         className="nav-bar__nav-link"
         key={item.id}
         style={{ "--delay": `${item.id * 0.2}s` }}
-        onClick={ closeToggleMenu }>
+        onClick={closeToggleMenu}>
+        <i className={item.iconClassName} aria-hidden="true"></i>
         {item.nombre}
-        
       </NavLink>
     </li>
   )

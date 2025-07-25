@@ -117,6 +117,8 @@
         padding: 10px;
         text-transform: uppercase;
 
+
+
         a {
             text-decoration: none;
             color: white;
@@ -124,6 +126,10 @@
             animation: revealFromCenter 0.3s ease-out forwards;
             animation-delay: var(--delay);
             animation-fill-mode: both;
+
+            i {
+                padding: 8px;                
+            }
         }
     }
 
@@ -140,6 +146,14 @@
         a {
             color: #fe3500;
             font-weight: 700;
+            padding: 8px;
+
+            i {
+                border: solid 2px #fe3500;
+                border-radius: 50%;
+                margin-right: 7px;
+                font-size: 1.5em;
+            }
         }
     }
 }

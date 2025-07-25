@@ -1,16 +1,39 @@
 .wa-icon-link {
-        position: fixed;
-        bottom: 50px;
-        right: 20px;
-        z-index: 1000;
-        background-color: #25D366;
-        border-radius: 50%;
-        padding: 12px;
-        color: white;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 12px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: shake 4s infinite;
 
-        i {
-            font-size: 40px;
+    i {
+        font-size: 40px;
+    }
+
+    @keyframes shake {
+
+        0%,
+        12%,
+        4%,
+        8%,
+        16%,
+        20%,
+        24%,
+        100% {
+            transform: translateZ(0);
         }
+
+        1%,
+        10%,
+        6%, 14%,
+        18%,
+        22% {
+            transform: translate3d(5px, 0, 0);
+        }
+    }
 
 }
