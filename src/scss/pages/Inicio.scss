@@ -111,14 +111,11 @@
             align-self: flex-start;
             line-height: 4em;
             text-align: end;
-
-
-
         }
 
         &__tittle {
             font-size: 2.5em;
-                        font-weight: 700;
+            font-weight: 700;
         }
 
         &__first-text {
@@ -131,12 +128,8 @@
             width: 89%;
         }
 
-        &__second-text {}
-
         &__slider-container {
             width: 50%;
-
-            .slider {}
         }
     }
 

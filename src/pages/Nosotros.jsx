@@ -21,6 +21,7 @@ const Nosotros = () => {
           <video className="about-page__video-file" controls autoPlay muted loop>
             <source src='video/video-01.mp4' type='video/mp4' />
           </video>
+          <p>Ubicados en la ciudad de Tandil, te ofrecemos un servicio confiable de auxilio mecánico para autos y camionetas en cualquier lugar donde te encuentres. Estamos disponibles las 24 horas, listos para ayudarte cuando más lo necesites. Nos destacamos por la responsabilidad, el compromiso y el trato cordial con cada cliente.</p>
         </header>
 
         <section className="about-page__text-container">

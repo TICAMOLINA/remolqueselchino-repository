@@ -29,7 +29,7 @@ const Contacto = () => {
               <p><i className="fa fa-phone" aria-hidden="true"></i> (249)-4341482</p>
             </div>
             <div className="contact-page__text email">
-              <p><i className="fa fa-envelope" aria-hidden="true"></i> remolqueselchino @gmail.com</p>
+              <p><i className="fa fa-envelope" aria-hidden="true"></i> elchinoremolques @gmail.com</p>
             </div>
             <div className="contact-page__text adress">
               <p><i className="fa fa-location-arrow" aria-hidden="true"></i> Gaucho Rivero 458 - Tandil</p>

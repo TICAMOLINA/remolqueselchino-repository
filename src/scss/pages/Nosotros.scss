@@ -16,6 +16,12 @@
 
     }
 
+    &__video-container {
+        p {
+            display: none;
+        }
+    }
+
     &__video-file {
         width: 94%;
         display: block;
@@ -100,6 +106,57 @@
 
         &__logo-image {
             width: 100%;
+        }
+    }
+
+        @media screen and (min-width: 992px) {
+
+
+        &__video-container,
+        &__text-container,
+        &__image-logo-container {
+            max-width: none;
+            width: 40%;
+        }
+
+        &__video-container {
+            margin-top: 5rem;
+            width: 80%;
+
+            p {
+                display: block;
+                font-size: 1.8em;
+                font-weight: 700;
+                color: whitesmoke;
+                margin-top: 0px;
+                line-height: 2em;
+            }
+        }
+
+        &__video-file {
+            width: 300px;
+            height: 270px;
+            float: left;
+            margin-right: 20px;
+            padding: 0;
+            background: none;
+            background-color: none;
+            box-shadow: none;
+            border-radius: 80px;
+        }
+
+        &__text-container {
+            display: none;
+        }
+
+        &__image-logo-container {
+            margin-top: 100px;
+            margin-bottom: -130px;
+
+        }
+
+        &__logo-image {
+            border-radius: 5px;
         }
     }
 }
