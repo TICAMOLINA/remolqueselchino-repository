@@ -90,16 +90,63 @@
             }
         }
     }
-}
+
+    @media screen and (min-width: 992px) {
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: start;
+        gap: 8px;
+        width: 80%;
+
+        &__first-container,
+        &__slider-container {
+            margin-top: 50px;
+        }
+
+
+        &__first-container {
+            width: 50%;
+            align-self: flex-start;
+            line-height: 4em;
+            text-align: end;
 
 
 
-@keyframes efecto {
-    40% {
-        background-image: url(imgs/foto-02.webp);
+        }
+
+        &__tittle {
+            font-size: 2.5em;
+                        font-weight: 700;
+        }
+
+        &__first-text {
+            font-size: 3.5em;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        &__description-container {
+            width: 89%;
+        }
+
+        &__second-text {}
+
+        &__slider-container {
+            width: 50%;
+
+            .slider {}
+        }
     }
 
-    80% {
-        background-image: url(imgs/foto-03.webp);
+    @keyframes efecto {
+        40% {
+            background-image: url(imgs/foto-02.webp);
+        }
+
+        80% {
+            background-image: url(imgs/foto-03.webp);
+        }
     }
 }
