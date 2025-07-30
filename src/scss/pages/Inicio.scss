@@ -73,7 +73,7 @@
         padding: 1rem;
 
         .slider {
-            background-image: url(imgs/foto-01.webp);
+            background-image: url('/imgs/foto-01.webp');
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -135,11 +135,11 @@
 
     @keyframes efecto {
         40% {
-            background-image: url(imgs/foto-02.webp);
+            background-image: url('/imgs/foto-02.webp');
         }
 
         80% {
-            background-image: url(imgs/foto-03.webp);
+            background-image: url('/imgs/foto-03.webp');
         }
     }
 }
