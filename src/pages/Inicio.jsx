@@ -19,7 +19,7 @@ const Inicio = () => {
     >
       <main className="home">
         <header className="home__first-container">
-          <h1 className="home__tittle">Estés donde estés, SERVICIO DE REMOLQUE</h1>
+          <h1 className="home__tittle">Estés donde estés, SERVICIO DE REMOLQUE <span className='home__hidden-spans'>y grúa en tandil</span></h1>
           <p className="home__first-text">24 hs</p>
         </header>
 
@@ -28,7 +28,7 @@ const Inicio = () => {
         </section>
 
         <section className="home__description-container">
-          <p className='home__second-text'>Remolques El Chino es una empresa nueva dedicada al auxilio de autos y camionetas. Brindamos asistencia con responsabilidad y compromiso, disponibles para ayudarte las 24 horas y en cualquier momento. Trabajamos con seriedad para ganarnos la confianza de nuestros clientes.</p>
+          <p className='home__second-text'>Remolques El Chino es una empresa <span className='home__hidden-spans'>con grúa ubicada en la ciudad de Tandil</span> nueva dedicada al auxilio de autos y camionetas. Ubicados en la ciudad de Tandil, brindamos asistencia con responsabilidad y compromiso, disponibles para ayudarte las 24 horas y en cualquier momento. Trabajamos con seriedad para ganarnos la confianza de nuestros clientes.</p>
         </section>
       </main>
     </motion.div>

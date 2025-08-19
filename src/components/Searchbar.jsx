@@ -17,7 +17,7 @@ const Searchbar = () => {
             <div className="search-bar__logo-container">
                 <NavLink to="/"
                 onClick={closeToggleMenu}>
-                <img className="search-bar__logo-image" src="/imgs/logo-web.webp" alt="logo de la pagina" />
+                <img className="search-bar__logo-image" src="/imgs/logo-web.webp" alt="Logo de la empresa - grúa en Tandil, auxilio mecánico Tandil" />
                 </NavLink>
             </div>
 

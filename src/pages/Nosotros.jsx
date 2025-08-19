@@ -32,7 +32,7 @@ const Nosotros = () => {
         </section>
 
         <section className="about-page__image-logo-container">
-          <img className='about-page__logo-image' src="imgs/logo-tarjeta.webp" alt="Logo de la empresa" />
+          <img className='about-page__logo-image' src="imgs/logo-tarjeta.webp" alt="Logo de la empresa - grúa en Tandil, auxilio mecánico Tandil" />
         </section>
       </main>
     </motion.div>

@@ -64,6 +64,10 @@
         }
     }
 
+    &__hidden-spans {
+        display: none;
+    }
+
     &__slider-container {
         display: flex;
         justify-content: center;
