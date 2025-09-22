@@ -12,14 +12,20 @@ const fade = {
 
 const Servicios = () => {
     const [imagenes, setImagenes] = useState([])
+    const urlGallery = import.meta.env.VITE_BACKEND_GALERIA
 
     useEffect(() => {
-        const urlGallery = import.meta.env.VITE_BACKEND_GALERIA
         console.log("API_URL:", import.meta.env.VITE_BACKEND_GALERIA);
         const fetchImagenes = async () => {
-            const res = await fetch(urlGallery)
-            const data = await res.json()
-            setImagenes(data.fotos)
+            try {
+                const res = await fetch(urlGallery)
+                const data = await res.json()
+                 console.log("Imágenes:", data);
+                setImagenes(data.fotos)
+            } catch (error) {
+                console.error("Error al obtener imágenes:", error);
+            }
+
         }
         fetchImagenes()
     }, [])
