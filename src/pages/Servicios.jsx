@@ -15,6 +15,7 @@ const Servicios = () => {
 
     useEffect(() => {
         const urlGallery = import.meta.env.VITE_BACKEND_GALERIA
+        console.log("API_URL:", import.meta.env.VITE_BACKEND_GALERIA);
         const fetchImagenes = async () => {
             const res = await fetch(urlGallery)
             const data = await res.json()
