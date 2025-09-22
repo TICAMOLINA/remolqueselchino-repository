@@ -15,17 +15,14 @@ const Servicios = () => {
     const urlGallery = import.meta.env.VITE_BACKEND_GALERIA
 
     useEffect(() => {
-        console.log("API_URL:", import.meta.env.VITE_BACKEND_GALERIA);
         const fetchImagenes = async () => {
             try {
                 const res = await fetch(urlGallery)
                 const data = await res.json()
-                 console.log("Imágenes:", data);
                 setImagenes(data.fotos)
             } catch (error) {
                 console.error("Error al obtener imágenes:", error);
             }
-
         }
         fetchImagenes()
     }, [])
