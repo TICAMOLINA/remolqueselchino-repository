@@ -3,6 +3,7 @@ import Inicio from "../pages/Inicio"
 import Contacto from "../pages/Contacto"
 import Nosotros from "../pages/Nosotros"
 import NoEncontrado from "../pages/NoEncontrado"
+import Servicios from "../pages/Servicios"
 
 
 const RoutesComponent = ({ location }) => {
@@ -11,6 +12,7 @@ const RoutesComponent = ({ location }) => {
         <Route path="/" element={<Inicio />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/Nosotros" element={<Nosotros />} />
+        <Route path="/servicios" element={<Servicios />} />
         <Route path="*" element={<NoEncontrado />} />
       </Routes> 
     )

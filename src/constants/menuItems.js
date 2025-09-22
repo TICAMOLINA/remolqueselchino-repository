@@ -17,6 +17,12 @@ const menuItems = [
         ruta: '/contacto',
         iconClassName: 'fa-solid fa-comments'
     },
+        {
+        id: 4,
+        nombre: 'Servicios',
+        ruta: '/servicios',
+        iconClassName: 'fa-solid fa-camera'
+    },
 ]
 
 export default menuItems
